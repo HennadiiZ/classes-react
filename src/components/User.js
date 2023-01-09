@@ -2,6 +2,11 @@ import classes from './User.module.css';
 import { Component } from 'react';
 
 class User extends Component {
+
+  componentWillUnmount() {
+    console.log('User will unmount!');
+  }
+
   render(){
     return <li className={classes.user}>{this.props.name}</li>;
   }
@@ -20,3 +25,5 @@ export default User;
 // 167 The Component Lifecycle (Class-based Components Only!)
 
 // 168 Lifecycle Methods In Action 
+
+// 
