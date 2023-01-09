@@ -13,7 +13,8 @@ class UserFinder extends Component {
   constructor() {
     super();
     this.state = {
-      filteredUsers: DUMMY_USERS,
+      // filteredUsers: DUMMY_USERS,
+      filteredUsers: [],
       searchTerm: ''
     };
   }
@@ -25,6 +26,12 @@ class UserFinder extends Component {
         <Users users={this.state.filteredUsers} />
       </Fragment>
     );
+  }
+
+  componentDidMount() { //  DUMMY
+    this.setState({
+      filteredUsers: DUMMY_USERS
+    });
   }
 
   componentDidUpdate(prevProps, prevState) {
