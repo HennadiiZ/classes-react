@@ -16,3 +16,5 @@ export default User;
 // 165 Adding a First Class-based Component
 
 // 166 Working with State & Events
+
+// 167 The Component Lifecycle (Class-based Components Only!)
